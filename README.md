@@ -1,4 +1,4 @@
-*** <img src="https://github.com/Real-Time-MIMO/JetsonHardwareSetup/blob/Test_Setup/imgs/Logo_border_name_cropped.png">
+<img src="https://github.com/Real-Time-MIMO/JetsonHardwareSetup/blob/Test_Setup/imgs/Logo_border_name_cropped.png" width="500" height="100">
     
 
 
