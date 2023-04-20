@@ -4,7 +4,7 @@
 # Steps on the new Linux box
 1. Downloaded entire JetsonHardwareSetup folder
 2. go into DCA1000.../Release and target DCAconfig.json to edit this file in a text editor (make sure to create a testdata folder to have all the stored data go into there)
-3. open two terminals 
+3. Install the dependencies as described in [installation instructions](./docs/install.md).  
 4. 
 5.
 
@@ -35,13 +35,13 @@ where the ellipses is the desired filepath. The DCA1000ConfigPort should be 4096
 
 3. Add the RF library path. This can be done with the following commands in Terminal
 ~~~~~
-$ LD_LIBRARY_PATH=/home/fusionsense/Documents/CLI_SETUP_AWR2243/DCA1000/SourceCode/Release/
+$ LD_LIBRARY_PATH=.../DCA1000/SourceCode/Release/
 $ export LD_LIBRARY_PATH
 ~~~~~
 
 4. Navigate to .../CLI_Setup_AWR2243/DCA1000/SourceCode/Release. Then run DCA1000EVM_CLI_Control.exe in Terminal to open program and see if a menu pops up to confirm the program is working.
 ~~~~~
-$ ./DCA1000EVM_CLI_Control fpga food.setup.json
+$ sudo ./DCA1000EVM_CLI_Control fpga food.setup.json
 ~~~~~
 The output should be as follows:
 > FPGA Configuration command : Success
