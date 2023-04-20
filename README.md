@@ -1,5 +1,9 @@
 
-![image](https://github.com/Real-Time-MIMO/JetsonHardwareSetup/blob/Test_Setup/imgs/fusion_sense_logo_git.jpg)
+<p align="center">
+    <https://github.com/Real-Time-MIMO/JetsonHardwareSetup/blob/Test_Setup/imgs/Logo_border_name_cropped.png"  width="400" height="300">
+</p>
+
+
 
 ## Dependencies for Linux OS
 1. Archiconda 
