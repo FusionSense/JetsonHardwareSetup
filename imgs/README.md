@@ -1,1 +1,1 @@
-> This file holds all the images used in the main README.md
+## This file holds all the images used in the main README.md
