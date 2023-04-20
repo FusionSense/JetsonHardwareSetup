@@ -4,8 +4,6 @@
 
 
 ## Dependencies for Linux OS
-1. Archiconda 
-
 
 
 # mmwaveAPI
