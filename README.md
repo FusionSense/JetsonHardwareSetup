@@ -1,7 +1,7 @@
-
-<p align="center">
-    <https://github.com/Real-Time-MIMO/JetsonHardwareSetup/blob/Test_Setup/imgs/Logo_border_name_cropped.png"  width="400" height="300">
-</p>
+1. Make sure radar board (AWR2243BOOST board) is in SOP4 mode (only SOP0 pin should have a jumper). 
+    <p align="center">
+        <img src="https://github.com/Real-Time-MIMO/JetsonHardwareSetup/blob/Test_Setup/imgs/Logo_border_name_cropped.png"  width="400" height="300">
+    </p>
 
 
 
