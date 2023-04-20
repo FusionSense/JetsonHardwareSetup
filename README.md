@@ -1,8 +1,12 @@
-# mmwaveAPI
+
 
 
 ## Dependencies for Linux OS
 1. Archiconda 
+
+
+
+# mmwaveAPI
 
 You run DCA and MMWAVELINK at the same time in two different Terminals. These will be called the DCA Terminals and RADAR Terminals
 > Open two different terminals for DCA and RADAR
