@@ -68,7 +68,7 @@ $ ./DCA1000EVM_CLI_Control query_status food.setup.json
 ~~~~
 $ ./DCA1000EVM_CLI_Control stop_record food.setup.json
 ~~~~
-> Stops the recording, needed for the next step
+> Stops the recording, needed for the next step. This step will timeout, or you can do ctrl-C in the Terminal to force quit. In either case, do the next step to reset the fpga for the next recording phase
 ~~~~
 $ ./DCA1000EVM_CLI_Control reset_fpga food.setup.json
 ~~~~
