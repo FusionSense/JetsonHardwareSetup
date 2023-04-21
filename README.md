@@ -8,7 +8,7 @@
 2. go into DCA1000.../Release and target DCAconfig.json to edit this file in a text editor (make sure to create a testdata folder to have all the stored data go into there)
 3. Install the dependencies as described in [installation instructions](./docs/install.md).  
     * Make sure to follow correct OS procedure with ARM architechture.
-4. Go to Network Connections and double click on Wired connection for the DCA ethernet (Wired connection 1 for the Jetson). Navigate to IPV4 settings and manually set the IP address to 192.168.33.30 with a Netmask of 255.255.255.0. These addresses should match with the DCAconfig.json file. An example is shown below
+4. Go to Network Connections and double click on Wired connection for the DCA ethernet (Wired connection 1 for the Jetson). Navigate to IPV4 settings and manually set the IP address to 192.168.33.30 with a Netmask of 255.255.255.0 (this will be automatically changed to 24, don't worry about it). These addresses should match with the DCAconfig.json file. An example is shown below
 
 <img src="https://user-images.githubusercontent.com/12723018/233515674-bec797f6-04a0-4a79-96eb-b0869d814f4b.png" width="400" height="400">
 
@@ -70,7 +70,7 @@ $ ./DCA1000EVM_CLI_Control query_status food.setup.json
 ~~~~
 $ ./DCA1000EVM_CLI_Control stop_record food.setup.json
 ~~~~
-> Stops the recording, needed for the next step. This step will timeout, or you can do ctrl-C in the Terminal to force quit. In either case, do the next step to reset the fpga for the next recording phase
+> Stops the recording, needed for the next step. This step will timeout. After this, go the next step to reset the fpga for the next recording phase
 ~~~~
 $ ./DCA1000EVM_CLI_Control reset_fpga food.setup.json
 ~~~~
