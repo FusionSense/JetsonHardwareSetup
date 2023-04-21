@@ -5,9 +5,10 @@
 1. Downloaded entire JetsonHardwareSetup folder
 2. go into DCA1000.../Release and target DCAconfig.json to edit this file in a text editor (make sure to create a testdata folder to have all the stored data go into there)
 3. Install the dependencies as described in [installation instructions](./docs/install.md).  
-    * Make sure to follow correct OS procedure
-5. 
-6.
+    * Make sure to follow correct OS procedure with ARM architechture.
+4. Go to Network Connections and double click on Wired connection for the DCA ethernet (Wired connection 1 for the Jetson). Navigate to IPV4 settings and manually set the IP address to 192.168.33.30 with a Netmask of 255.255.255.0. These addresses should match with the DCAconfig.json file. An example is shown below
+
+<img src="https://user-images.githubusercontent.com/12723018/233515674-bec797f6-04a0-4a79-96eb-b0869d814f4b.png" width="400" height="400">
 
 
 
@@ -34,9 +35,9 @@ You run DCA and MMWAVELINK at the same time in two different Terminals. These wi
 ~~~~ 
 where the ellipses is the desired filepath. The DCA1000ConfigPort should be 4096, and the DCA1000DataPort should be 4098
 
-3. Add the RF library path. This can be done with the following commands in Terminal
+3. Add the RF library path. This can be done with the following commands in Terminal. Use the absolute path for the location of the libRF_API.so location (our example below)
 ~~~~~
-$ LD_LIBRARY_PATH=.../DCA1000/SourceCode/Release/
+$ LD_LIBRARY_PATH=/home/fusionsense/Documents/CLI_Setup_AWR2243/DCA1000/SourceCode/Release
 $ export LD_LIBRARY_PATH
 ~~~~~
 
