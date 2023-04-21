@@ -16,9 +16,6 @@
 
 
 
-## Dependencies for Linux OS
-=======
-
 
 # mmwaveAPI
 
