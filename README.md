@@ -1,16 +1,9 @@
 <img src="https://github.com/Real-Time-MIMO/JetsonHardwareSetup/blob/Test_Setup/imgs/Logo_border_name_cropped.png" width="200" height="100">
 
-# Steps on the new Linux box
-
-1. Downloaded entire JetsonHardwareSetup folder
-2. go into DCA1000.../Release and target DCAconfig.json to edit this file in a text editor (make sure to create a testdata folder to have all the stored data go into there)
-3. Install the dependencies as described in [installation instructions](./docs/install.md).  
-    * Make sure to follow correct OS procedure
-4. Need to include information about setting up network connections with IPv4 Settings
-5.
 
 
 # Steps on the new Linux box
+
 1. Downloaded entire JetsonHardwareSetup folder
 2. go into DCA1000.../Release and target DCAconfig.json to edit this file in a text editor (make sure to create a testdata folder to have all the stored data go into there)
 3. Install the dependencies as described in [installation instructions](./docs/install.md).  
