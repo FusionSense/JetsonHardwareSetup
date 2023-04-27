@@ -40,6 +40,7 @@ where the ellipses is the desired filepath. The DCA1000ConfigPort should be 4096
 ~~~~~
 $ LD_LIBRARY_PATH=/home/fusionsense/Documents/CLI_Setup_AWR2243/DCA1000/SourceCode/Release
 $ export LD_LIBRARY_PATH
+$ sudo ldconfig /home/fusionsense/Documents/CLI_Setup_AWR2243/DCA1000/SourceCode/Release
 ~~~~~
 
 4. Navigate to .../CLI_Setup_AWR2243/DCA1000/SourceCode/Release. Then run DCA1000EVM_CLI_Control.exe in Terminal to open program and see if a menu pops up to confirm the program is working.
