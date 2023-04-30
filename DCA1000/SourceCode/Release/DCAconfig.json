@@ -4,7 +4,7 @@
   "dataTransferMode": "LVDSCapture",
   "dataCaptureMode": "ethernetStream",
   "lvdsMode": 1,
-  "dataFormatMode": 1,
+  "dataFormatMode": 3,
   "packetDelay_us": 25,
   "ethernetConfig": {
   "DCA1000IPAddress": "192.168.33.180",
