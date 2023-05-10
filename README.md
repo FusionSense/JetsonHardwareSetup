@@ -29,7 +29,7 @@ You run DCA and MMWAVELINK at the same time in two different Terminals. These wi
  > Note how the SOP0 has a jumper connected
  
  > SOP1 and SOP2 both have their jumpers disconnected from the AWR2243BOOST board
-2. Edit food.setup.json file (text editor or gedit) to configure paths and ethernet connections to DCA
+2. Edit DCAconfig.json file (text editor or gedit) to configure paths and ethernet connections to DCA
 > Edit fileBasePath to read as follows: 
 ~~~~ 
 "fileBasePath": "/home/fusionsense/"...
@@ -45,36 +45,41 @@ $ sudo ldconfig /home/fusionsense/Documents/CLI_Setup_AWR2243/DCA1000/SourceCode
 
 4. Navigate to .../CLI_Setup_AWR2243/DCA1000/SourceCode/Release. Then run DCA1000EVM_CLI_Control.exe in Terminal to open program and see if a menu pops up to confirm the program is working.
 ~~~~~
-$ sudo ./DCA1000EVM_CLI_Control fpga food.setup.json
+$ sudo ./DCA1000EVM_CLI_Control fpga DCAconfig.json
+~~~~~
+
+You may have to run
+~~~~~
+$ sudo chmod +x DCA1000EVM_CLI_Control
 ~~~~~
 The output should be as follows:
 > FPGA Configuration command : Success
 
 The following commands are used in sequence to record ADC data (in Terminal)
 ~~~~
-$ ./DCA1000EVM_CLI_Control fpga food.setup.json          
+$ ./DCA1000EVM_CLI_Control fpga DCAconfig.json          
 ~~~~
 > This Connects to the Fpga
 ~~~~
-$ ./DCA1000EVM_CLI_Control record food.setup.json
+$ ./DCA1000EVM_CLI_Control record DCAconfig.json
 ~~~~
 > This Configures record command to fpga (DCA ARM)
 ~~~~
-$ ./DCA1000EVM_CLI_Control.exe start_record food.setup.json
+$ ./DCA1000EVM_CLI_Control.exe start_record DCAconfig.json
 ~~~~
 > Triggers the reading of packets. *Run this AFTER you run mmwavelink.exe* if it works, a blinking green light will appear on the DCA
 ~~~~
-$ ./DCA1000EVM_CLI_Control query_status food.setup.json
+$ ./DCA1000EVM_CLI_Control query_status DCAconfig.json
 ~~~~
 > Optional but you can run during the record to see if packets are sent.
 ~~~~
-$ ./DCA1000EVM_CLI_Control stop_record food.setup.json
+$ ./DCA1000EVM_CLI_Control stop_record DCAconfig.json
 ~~~~
 > Stops the recording, needed for the next step. This step will timeout. After this, go the next step to reset the fpga for the next recording phase
 ~~~~
-$ ./DCA1000EVM_CLI_Control reset_fpga food.setup.json
+$ ./DCA1000EVM_CLI_Control reset_fpga DCAconfig.json
 ~~~~
-> This step is IMPORTANT! This resets the fpga so that another set of frames can be read in later. After this step, the first setup command must be run ($ ./DCA1000EVM_CLI_Control fpga food.setup.json)
+> This step is IMPORTANT! This resets the fpga so that another set of frames can be read in later. After this step, the first setup command must be run ($ ./DCA1000EVM_CLI_Control fpga DCAconfig.json)
 
 ## RADAR Terminal (API that sets up radar parameters and data formats)
 1. Make sure radar board is in SOP4 mode (only SOP0 pin should have a jumper).
